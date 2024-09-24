@@ -1,0 +1,126 @@
+a {
+	color: white;
+	text-decoration: none;
+}
+
+body {
+    background: #171717;
+    margin: 0em;
+    color: darkgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    line-height: 3em;
+	text-align: center;
+	background-color: #3F1052;
+}
+
+@media (max-width: 1500px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.navbar {
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    nav .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.navbar a {
+    margin-left: 3em;
+}
+
+.navsearch {
+    width: 20%;
+}
+
+main {
+    padding-left: 2em;
+}
+
+.fixturesTable, .apiFootballData table {
+    border-collapse: collapse;
+    text-align: center;
+	vertical-align: middle;
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.fixturesTable th, table.fixturesTable td, .apiFootballData th, .apiFootballData td {
+    border: 1px solid darkgray;
+    padding: 0.5em;
+}
+
+table.fixturesTable th, .apiFootballData th {
+    background-color: #3F1052;
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+table.fixturesTable tr:nth-child(odd), .apiFootballData tr:nth-child(odd) {
+    background-color: #303134;
+}
+  
+table.fixturesTable tr:nth-child(even), .apiFootballData tr:nth-child(even) {
+    background-color: #202124;
+}
+
+.newsTable {
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    margin: 2em;
+    border-spacing: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.newsTable td {
+    color: #7CB4F8;
+}
+
+table.newsTable td:nth-child(2) {
+    width: 50em;
+}
+table.newsTable td:first-child, table.newsTable td:nth-child(3), table.newsTable td:nth-child(4), table.newsTable td:nth-child(5) {
+    text-align: center;
+    vertical-align: top;
+}
+
+table.newsTable th {
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+#statsBar {
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+footer {
+    line-height: 3em;
+	text-align: center;
+    color: #7CB4F8;
+    background-color: #3F1052;
+}
